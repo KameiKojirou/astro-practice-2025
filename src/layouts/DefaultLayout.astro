@@ -1,4 +1,6 @@
 ---
+import NavBar from "../components/NavBar.astro";
+import Navigation from "../components/Navigation.astro";
 import ThemeSwitcher from "../components/ThemeSwitcher.astro";
 import "../styles/global.css";
 ---
@@ -11,8 +13,12 @@ import "../styles/global.css";
     <title>My Astro Site</title>
   </head>
   <body>
-    <!-- Your button or nav, anywhere in the layout -->
-    <ThemeSwitcher />
-    <slot />
+    <NavBar>
+        <Navigation />
+        <ThemeSwitcher />
+    </NavBar>
+    <main class="container mx-auto p-4">
+        <slot />
+    </main>
   </body>
 </html>
