@@ -1,0 +1,18 @@
+---
+import ThemeSwitcher from "../components/ThemeSwitcher.astro";
+import "../styles/global.css";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Astro Site</title>
+  </head>
+  <body>
+    <!-- Your button or nav, anywhere in the layout -->
+    <ThemeSwitcher />
+    <slot />
+  </body>
+</html>
